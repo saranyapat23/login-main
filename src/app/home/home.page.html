@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <div class="t_center">
+      <h2 >เข้าสู่ระบบ</h2>
+      <div class="ion-padding">
+        <ion-input label="username" [(ngModel)]="txtusername" type="text" fill="solid"></ion-input>
+        <ion-input label="password"  [(ngModel)]="txtpassword" type="password" fill="solid"></ion-input>
+      </div>
+      <ion-button (click)="login()" >Login</ion-button>
+      <ion-button (click)="goToRegister()" >สมัครสมาชิก</ion-button>
+    </div>
+  </ion-card>
+</ion-content>
